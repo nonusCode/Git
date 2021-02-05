@@ -2,6 +2,24 @@
 
 
 
+### 초기 설정
+
+```bash
+# 전역
+$ git config --global user.email "GitHub@email"
+$ git config --global user.name "GitHub@name"
+```
+
+
+
+### 원격저장소 설정
+
+```bash
+$ git remote add origin repositoryUrl
+```
+
+
+
 ### 가상환경 설정(git bash)
 
 > Python 3.5.3 (Current)
