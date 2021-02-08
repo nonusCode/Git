@@ -2,20 +2,70 @@
 
 
 
-### 초기 설정
+### 저장소 설정
+
+> `.git`이라는 숨김폴더 생성
+>
+> `git bash`에서 `(master)`라는 branch 생성
 
 ```bash
-# 전역
-$ git config --global user.email "GitHub@email"
-$ git config --global user.name "GitHub@name"
+$ git init
 ```
 
 
 
-### 원격저장소 설정
+### 초기 설정(계정 연동)
 
 ```bash
-$ git remote add origin repositoryUrl
+# 전역 설정
+$ git config --global user.email "GitHub@email"
+$ git config --global user.name "GitHub@name"
+
+# 지역 설정
+$ git config --local user.email "GitHub@email"
+$ git config --local user.name "GitHub@name"
+```
+
+
+
+### 원격저장소 설정(리포지터리 연동)
+
+```bash
+$ git remote add origin https://github.com/~
+```
+
+
+
+### add
+
+> `git`에서 `commit`할 대상을 `staging area`로 이동시키는 명령어
+
+```bash
+# 모든 파일 및 폴더를 stage
+$ git add .
+
+# 특정 파일, 폴더를 stage
+$ git add nonus/README.md
+```
+
+
+
+### commit
+
+> `git`에 이력을 남기기 위한 명령어
+
+```bash
+$ git commit -m "Message"
+```
+
+
+
+### push
+
+> 원격저장소에 업로드를 위한 명령어
+
+```bash
+$ git push origin master
 ```
 
 
